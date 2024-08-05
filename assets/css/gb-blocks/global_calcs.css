@@ -1,0 +1,311 @@
+.wp-block-zenbusiness, .wp-block-calc {
+  padding: 25px 35px;
+  margin: 0 0 30px;
+  background: #f8fafa;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.wp-block-zenbusiness .calc-icon, .wp-block-calc .calc-icon {
+  display: none;
+}
+.wp-block-zenbusiness:before, .wp-block-zenbusiness:after, .wp-block-calc:before, .wp-block-calc:after {
+  content: "";
+  width: 10px;
+  background: #EC6525;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.wp-block-zenbusiness h4, .wp-block-calc h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.wp-block-zenbusiness:before, .wp-block-calc:before {
+  left: 0;
+}
+.wp-block-zenbusiness:after, .wp-block-calc:after {
+  right: 0;
+}
+.wp-block-zenbusiness .select, .wp-block-zenbusiness select, .wp-block-calc .select, .wp-block-calc select {
+  width: 100%;
+  min-height: 38px;
+}
+.wp-block-zenbusiness .select li, .wp-block-zenbusiness select li, .wp-block-calc .select li, .wp-block-calc select li {
+  margin-bottom: 0;
+}
+.wp-block-zenbusiness .select .select2-container .select2-selection--single, .wp-block-zenbusiness select .select2-container .select2-selection--single, .wp-block-calc .select .select2-container .select2-selection--single, .wp-block-calc select .select2-container .select2-selection--single {
+  min-height: 36px;
+}
+.wp-block-zenbusiness .select .select2-container .select2-selection--single .select2-selection__rendered, .wp-block-zenbusiness select .select2-container .select2-selection--single .select2-selection__rendered, .wp-block-calc .select .select2-container .select2-selection--single .select2-selection__rendered, .wp-block-calc select .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 34px;
+}
+.wp-block-zenbusiness .select .select2-container .select2-search--inline .select2-search__field, .wp-block-zenbusiness select .select2-container .select2-search--inline .select2-search__field, .wp-block-calc .select .select2-container .select2-search--inline .select2-search__field, .wp-block-calc select .select2-container .select2-search--inline .select2-search__field {
+  height: 24px;
+}
+.wp-block-zenbusiness .select .select2-container--default .select2-selection--single .select2-selection__arrow, .wp-block-zenbusiness select .select2-container--default .select2-selection--single .select2-selection__arrow, .wp-block-calc .select .select2-container--default .select2-selection--single .select2-selection__arrow, .wp-block-calc select .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 34px;
+}
+.wp-block-zenbusiness p, .wp-block-calc p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.wp-block-zenbusiness label, .wp-block-calc label {
+  margin: 0;
+}
+.wp-block-zenbusiness .results, .wp-block-calc .results {
+  margin-top: 30px;
+}
+.wp-block-zenbusiness .note, .wp-block-calc .note {
+  color: #959394;
+  font-size: 14px;
+  margin-top: 14px;
+  display: none;
+}
+.wp-block-zenbusiness .note:last-child, .wp-block-calc .note:last-child {
+  margin-top: 5px;
+}
+.wp-block-zenbusiness .note-agent, .wp-block-calc .note-agent {
+  display: none;
+}
+.wp-block-zenbusiness .launch-note, .wp-block-calc .launch-note {
+  display: none;
+}
+.wp-block-zenbusiness div.select .select2.select2-container + span, .wp-block-calc div.select .select2.select2-container + span {
+  display: none;
+}
+.wp-block-zenbusiness .val, .wp-block-calc .val {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.wp-block-zenbusiness .val p, .wp-block-calc .val p {
+  margin: 0 0 1em;
+}
+.wp-block-zenbusiness .val.total p, .wp-block-calc .val.total p {
+  font-size: 24px;
+}
+.wp-block-zenbusiness .val .res, .wp-block-calc .val .res {
+  color: #959394;
+}
+.wp-block-zenbusiness .btn, .wp-block-calc .btn {
+  background-color: #6fc27c;
+  margin: 20px auto 0;
+  color: #ffffff;
+}
+.wp-block-zenbusiness .calc-disclaimer, .wp-block-calc .calc-disclaimer {
+  margin: 20px auto 0 auto;
+  color: #999;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.wp-block-zenbusiness .calc-disclaimer span, .wp-block-calc .calc-disclaimer span {
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  border: none;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2em;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  width: fit-content;
+}
+
+.expedited {
+  margin-top: 10px;
+}
+.expedited label:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 138px;
+  width: 6px;
+  height: 14px;
+  border: solid silver;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.expedited label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #ec6525;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #ec6525;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.subscriptions-block, .subscriptions-block1, .agent-block, .entity-block, .entity-block1 {
+  accent-color: #ec6525;
+  margin: 0 0 30px;
+}
+.subscriptions-block label, .subscriptions-block1 label, .agent-block label, .entity-block label, .entity-block1 label {
+  cursor: pointer;
+}
+
+.entity-block, .entity-block1, .subscriptions-block, .subscriptions-block1 {
+  display: none;
+}
+
+input[type=radio] {
+  margin-right: 10px;
+}
+
+input[type=radio] {
+  transform: scale(1.3);
+}
+
+.carte, .add-on, .extras, .state {
+  margin-top: 30px;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #ec6525;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 138px;
+  width: 6px;
+  height: 14px;
+  border: solid #ec6525;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 576px) {
+  .subscriptions-block input, .subscriptions-block1 input {
+    margin-bottom: 10px;
+  }
+}
+.membership {
+  display: flex;
+  align-items: center;
+  margin: -10px 0;
+}
+.membership input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.membership p {
+  margin-right: 10px;
+}
+.membership label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 21px;
+  background: grey;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+}
+.membership label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.membership input:checked + label {
+  background: #ec6525;
+}
+.membership input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.membership label:active:after {
+  width: 15px;
+}
+
+/*# sourceMappingURL=global_calcs.css.map */

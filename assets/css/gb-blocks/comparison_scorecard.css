@@ -1,0 +1,121 @@
+.comparison_scorecard {
+  padding: 50px;
+  margin: 30px 0;
+  background: #f8fafa;
+  border-radius: 16px;
+}
+.comparison_scorecard .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+@media (max-width: 767px) {
+  .comparison_scorecard .products {
+    grid-template-columns: 1fr;
+  }
+}
+.comparison_scorecard .score_wrap {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.comparison_scorecard .score_items {
+  grid-row: 2/4;
+}
+@media (max-width: 767px) {
+  .comparison_scorecard .score_items {
+    grid-row: 2/3;
+  }
+}
+.comparison_scorecard .score_items .item {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  align-items: center;
+}
+.comparison_scorecard .score_items .item p {
+  margin-bottom: 0;
+}
+.comparison_scorecard .score_items .item .stars img {
+  vertical-align: initial;
+  width: calc(100% + 4px);
+  margin: -1px -2px;
+  max-width: calc(100% + 4px);
+}
+.comparison_scorecard .rating-main {
+  margin-bottom: 10px;
+}
+.comparison_scorecard .rating-main p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.comparison_scorecard .rating-main .stars {
+  height: 42px;
+  width: 200px;
+}
+.comparison_scorecard .product .logo {
+  text-align: center;
+}
+.comparison_scorecard .product .logo img {
+  max-width: 250px;
+  width: 100%;
+}
+.comparison_scorecard .product ul {
+  padding-left: 30px;
+  max-width: fit-content;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .comparison_scorecard .product ul li {
+    text-align: center;
+  }
+}
+.comparison_scorecard .product ul li::before {
+  left: -30px;
+  width: 15px;
+  height: 12px;
+  top: calc(50% - 4px);
+  background-image: url("../../img/check-active.svg");
+  background-color: rgba(255, 255, 255, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+.comparison_scorecard .description {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 35px;
+  padding: 0 25px;
+}
+@media (max-width: 767px) {
+  .comparison_scorecard .description {
+    font-size: 18px;
+    padding: 0;
+  }
+}
+.comparison_scorecard .stars {
+  height: 21px;
+  width: 100px;
+  margin: 10px auto;
+}
+.comparison_scorecard .stars img {
+  vertical-align: initial;
+  width: calc(100% + 4px);
+  margin: 0 -2px;
+  max-width: calc(100% + 4px);
+}
+.comparison_scorecard .btn {
+  display: block;
+  border: none;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 35px auto 0;
+  line-height: 1.2em;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=comparison_scorecard.css.map */
